@@ -1,0 +1,9 @@
+platform :ios, ‘7.0’
+
+pod 'Masonry'
+pod 'LPCategory', :git => 'git@bitbucket.org:loopeer/lpcategory.git'
+
+xcodeproj ‘LPCenterTextView.xcodeproj'
+
+
+

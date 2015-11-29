@@ -1,0 +1,37 @@
+PODS:
+  - DateTools (1.5.0)
+  - LPCategory (0.0.4):
+    - DateTools (= 1.5.0)
+    - LPCategory/NSString (= 0.0.4)
+    - LPCategory/UINavigationBar (= 0.0.4)
+    - LPCategory/UITextField (= 0.0.4)
+    - LPCategory/UIViewController (= 0.0.4)
+  - LPCategory/NSString (0.0.4):
+    - DateTools (= 1.5.0)
+  - LPCategory/UINavigationBar (0.0.4):
+    - DateTools (= 1.5.0)
+  - LPCategory/UITextField (0.0.4):
+    - DateTools (= 1.5.0)
+  - LPCategory/UIViewController (0.0.4):
+    - DateTools (= 1.5.0)
+  - Masonry (0.6.3)
+
+DEPENDENCIES:
+  - LPCategory (from `git@bitbucket.org:loopeer/lpcategory.git`)
+  - Masonry
+
+EXTERNAL SOURCES:
+  LPCategory:
+    :git: git@bitbucket.org:loopeer/lpcategory.git
+
+CHECKOUT OPTIONS:
+  LPCategory:
+    :commit: 5ffe5a519983b89b9187fec3f619efc8ee96bf8b
+    :git: git@bitbucket.org:loopeer/lpcategory.git
+
+SPEC CHECKSUMS:
+  DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
+  LPCategory: e2a0c8e3fcb47123c0585268ea409d91c8b44580
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+
+COCOAPODS: 0.38.2
