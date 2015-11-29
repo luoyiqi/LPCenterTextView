@@ -1,17 +1,17 @@
 //
-//  CenterTextViewController.m
+//  LeftImageViewController.m
 //  LPCenterTextView
 //
 //  Created by Han Shuai on 15/11/29.
 //  Copyright © 2015年 Loopeer. All rights reserved.
 //
 
-#import "CenterTextViewController.h"
+#import "LeftImageViewController.h"
 #import "LPCenterTextView.h"
 #import "Masonry.h"
 
-@implementation CenterTextViewController {
-    UIImageView *_userAvatar;
+@implementation LeftImageViewController {
+    UILabel *_titleLabel;
     LPCenterTextView *_infoView;
     UIView *_bottomView;
 }
@@ -19,7 +19,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.navigationItem.title = @"多行居中文本";
+        self.navigationItem.title = @"带有左图标";
     }
     return self;
 }
@@ -28,17 +28,21 @@
     [super loadView];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _userAvatar = [[UIImageView alloc] init];
-    _userAvatar.contentMode = UIViewContentModeScaleAspectFill;
-    _userAvatar.image = [UIImage imageNamed:@"userAvatar"];
-    [self.view addSubview:_userAvatar];
+    _titleLabel = [[UILabel alloc] init];
+    _titleLabel.font = [UIFont systemFontOfSize:18];
+    _titleLabel.textColor = [UIColor blackColor];
+    _titleLabel.text = @"大标题";
+    [self.view addSubview:_titleLabel];
     
     _infoView = [[LPCenterTextView alloc] init];
-    _infoView.numberOfLine = 0;
-    _infoView.contentFont = [UIFont systemFontOfSize:14];
-    _infoView.contentColor = [UIColor lightGrayColor];
     _infoView.backgroundColor = [UIColor redColor];
-    [_infoView setTextColor:[UIColor blackColor] InIndex:0];
+    _infoView.numberOfLine = 0;
+    _infoView.contentFont = [UIFont systemFontOfSize:15];
+    _infoView.contentColor = [UIColor grayColor];
+    _infoView.leftOffset = 35;
+    _infoView.rightOffset = 12;
+    _infoView.imageLeftOffset = 12;
+    _infoView.textAlignment = NSTextAlignmentLeft;
     [self.view addSubview:_infoView];
     
     _bottomView = [[UIView alloc] init];
@@ -48,18 +52,16 @@
     [self refreshConstraints];
 }
 
-
 - (void)updateViewConstraints {
     
-    [_userAvatar mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(110);
-        make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(15);
+    [_titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.view);
+        make.left.top.equalTo(self.view).offset(10);
     }];
     
     [_infoView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);
-        make.top.equalTo(_userAvatar.mas_bottom);
+        make.top.equalTo(_titleLabel.mas_bottom);
     }];
     
     [_bottomView mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -75,10 +77,10 @@
     [super viewDidLoad];
     [self suitIOS7];
     
-    [_infoView setText:@"小王子" forLabel:0];
-    [_infoView setText:nil forLabel:1];
-    [_infoView setText:@"羽毛球 排球 游泳 健身 做饭 啦拉拉" forLabel:2];
-    [_infoView setText:@"loopeer CEO" forLabel:3];
+    [_infoView setText:@"name" andImage:[UIImage imageNamed:@"3"] forLabel:0];
+    [_infoView setText:nil andImage:[UIImage imageNamed:@"4"] forLabel:1];
+    [_infoView setText:@"ios工程师" andImage:[UIImage imageNamed:@"1"] forLabel:2];
+    [_infoView setText:@"XXX@XXX.com" andImage:[UIImage imageNamed:@"2"] forLabel:3];
     [_infoView refresh];
     
     [self refreshConstraints];

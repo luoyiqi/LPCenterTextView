@@ -16,6 +16,8 @@
 		7916B1241C0AEA7E00505F64 /* LPCenterTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1231C0AEA7E00505F64 /* LPCenterTextView.m */; };
 		7916B1271C0AEAF100505F64 /* LPCenterTextFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1261C0AEAF100505F64 /* LPCenterTextFeature.m */; };
 		7916B12A1C0AF06800505F64 /* CenterTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1291C0AF06800505F64 /* CenterTextViewController.m */; };
+		7916B12D1C0AF56600505F64 /* LeftImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B12C1C0AF56600505F64 /* LeftImageViewController.m */; };
+		7916B1301C0B0B7300505F64 /* CustomLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B12F1C0B0B7300505F64 /* CustomLabelViewController.m */; };
 		E465A7C5A31FA14B6AF71F95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D30A882A506B28B97B3B65C1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,10 @@
 		7916B1261C0AEAF100505F64 /* LPCenterTextFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCenterTextFeature.m; sourceTree = "<group>"; };
 		7916B1281C0AF06800505F64 /* CenterTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterTextViewController.h; sourceTree = "<group>"; };
 		7916B1291C0AF06800505F64 /* CenterTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterTextViewController.m; sourceTree = "<group>"; };
+		7916B12B1C0AF56600505F64 /* LeftImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftImageViewController.h; sourceTree = "<group>"; };
+		7916B12C1C0AF56600505F64 /* LeftImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftImageViewController.m; sourceTree = "<group>"; };
+		7916B12E1C0B0B7300505F64 /* CustomLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabelViewController.h; sourceTree = "<group>"; };
+		7916B12F1C0B0B7300505F64 /* CustomLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabelViewController.m; sourceTree = "<group>"; };
 		AA55336105B81F3F990FA0AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D30A882A506B28B97B3B65C1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E9DB1D813155FA47E92415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +135,10 @@
 				7916B0F51C0AE4E100505F64 /* ViewController.m */,
 				7916B1281C0AF06800505F64 /* CenterTextViewController.h */,
 				7916B1291C0AF06800505F64 /* CenterTextViewController.m */,
+				7916B12B1C0AF56600505F64 /* LeftImageViewController.h */,
+				7916B12C1C0AF56600505F64 /* LeftImageViewController.m */,
+				7916B12E1C0B0B7300505F64 /* CustomLabelViewController.h */,
+				7916B12F1C0B0B7300505F64 /* CustomLabelViewController.m */,
 				7916B0FA1C0AE4E100505F64 /* Assets.xcassets */,
 				7916B0EE1C0AE4E100505F64 /* Supporting Files */,
 			);
@@ -344,12 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7916B1301C0B0B7300505F64 /* CustomLabelViewController.m in Sources */,
 				7916B0F61C0AE4E100505F64 /* ViewController.m in Sources */,
 				7916B1271C0AEAF100505F64 /* LPCenterTextFeature.m in Sources */,
 				7916B12A1C0AF06800505F64 /* CenterTextViewController.m in Sources */,
 				7916B0F31C0AE4E100505F64 /* AppDelegate.m in Sources */,
 				7916B1241C0AEA7E00505F64 /* LPCenterTextView.m in Sources */,
 				7916B0F01C0AE4E100505F64 /* main.m in Sources */,
+				7916B12D1C0AF56600505F64 /* LeftImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

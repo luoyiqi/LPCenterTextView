@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CenterTextViewController.h"
+#import "LeftImageViewController.h"
+#import "CustomLabelViewController.h"
 #import "Masonry.h"
 
 static NSString *const reuseIdentifier = @"cellIdentifier";
@@ -83,7 +85,16 @@ static NSString *const reuseIdentifier = @"cellIdentifier";
             [self.navigationController pushViewController:centerTextViewController animated:YES];
         }
             break;
-            
+        case 1: {
+            LeftImageViewController *leftImageViewController = [[LeftImageViewController alloc] init];
+            [self.navigationController pushViewController:leftImageViewController animated:YES];
+        }
+            break;
+        case 2: {
+            CustomLabelViewController *customLabelViewController = [[CustomLabelViewController alloc] init];
+            [self.navigationController pushViewController:customLabelViewController animated:YES];
+        }
+            break;
         default:
             break;
     }
