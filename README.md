@@ -79,6 +79,7 @@ LPCenterTextView有以下优点
       [_contentTextView refresh];
 ```
 效果图：
+
 ![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image2.png)
 
 左边带有icon的文本
@@ -101,6 +102,7 @@ LPCenterTextView有以下优点
     [_infoView refresh];
 ```
 效果图：
+
 ![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image3.png)
 
 高度自定义单个Label，可以利用LPCenterTextFeature
@@ -143,6 +145,7 @@ LPCenterTextView有以下优点
     [_mainView refresh];
 ```
 效果图：
+
 ![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image4.png)
 
 其中
