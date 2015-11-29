@@ -2,7 +2,7 @@
 
 ##使用场景
 
-![](https://github.com/hanshuaiLoopeer/LPCenterTextView/raw/master/Screenshorts/image1.png)
+![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image1.png)
 
 类似图中，时间、地点、性别、标签这样的多行文本，文本顺序不变，但是任意一行都可以缺失，这种场景非常常见，但是代码实现起来却很费功夫，且容易出错，布局更是容易冲突。
 
@@ -43,11 +43,12 @@
 ```
 
 为解决以上问题，我写了这个LPCenterTextView
-    LPCenterTextView有以下优点
-      * 一个View，替代了上边的8个成员变量，降低代码复杂度
-      * 布局去掉了大量的`if-else`，益于维护
-      * 赋值时，不必判断数据是否为空，直接赋值，如果数据为空，对应的Label自动隐藏，如果所有数据为空，LPCenterTextView高度为0
-      * view高度由内部决定，根据内容自适应高度
+
+LPCenterTextView有以下优点
+* 一个View，替代了上边的8个成员变量，降低代码复杂度
+* 布局去掉了大量的`if-else`，益于维护
+* 赋值时，不必判断数据是否为空，直接赋值，如果数据为空，对应的Label自动隐藏，如果所有数据为空，LPCenterTextView高度为0
+* view高度由内部决定，根据内容自适应高度
 
 
 ##Usage
@@ -78,7 +79,7 @@
       [_contentTextView refresh];
 ```
 效果图：
-![](https://github.com/hanshuaiLoopeer/LPCenterTextView/raw/master/Screenshorts/image2.png)
+![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image2.png)
 
 左边带有icon的文本
 ```obj-c
@@ -100,7 +101,7 @@
     [_infoView refresh];
 ```
 效果图：
-![](https://github.com/hanshuaiLoopeer/LPCenterTextView/raw/master/Screenshorts/image3.png)
+![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image3.png)
 
 高度自定义单个Label，可以利用LPCenterTextFeature
 ```obj-c
@@ -142,7 +143,7 @@
     [_mainView refresh];
 ```
 效果图：
-![](https://github.com/hanshuaiLoopeer/LPCenterTextView/raw/master/Screenshorts/image4.png)
+![](https://github.com/Loopeer/LPCenterTextView/raw/master/Screenshorts/image4.png)
 
 其中
 ```obj-c
