@@ -35,12 +35,11 @@
     [self.view addSubview:_titleLabel];
     
     _infoView = [[LPCenterTextView alloc] init];
-    _infoView.backgroundColor = [UIColor redColor];
     _infoView.numberOfLine = 0;
     _infoView.contentFont = [UIFont systemFontOfSize:15];
     _infoView.contentColor = [UIColor grayColor];
     _infoView.leftOffset = 35;
-    _infoView.rightOffset = 12;
+    _infoView.rightOffset = -12;
     _infoView.imageLeftOffset = 12;
     _infoView.textAlignment = NSTextAlignmentLeft;
     [self.view addSubview:_infoView];
@@ -79,7 +78,7 @@
     
     [_infoView setText:@"name" andImage:[UIImage imageNamed:@"3"] forLabel:0];
     [_infoView setText:nil andImage:[UIImage imageNamed:@"4"] forLabel:1];
-    [_infoView setText:@"ios工程师" andImage:[UIImage imageNamed:@"1"] forLabel:2];
+    [_infoView setText:@"ios工程师ios工程师ios工程师ios工程师ios工程师ios工程师" andImage:[UIImage imageNamed:@"1"] forLabel:2];
     [_infoView setText:@"XXX@XXX.com" andImage:[UIImage imageNamed:@"2"] forLabel:3];
     [_infoView refresh];
     

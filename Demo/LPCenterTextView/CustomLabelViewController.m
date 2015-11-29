@@ -59,7 +59,7 @@
     _mainView.contentFont = [UIFont systemFontOfSize:12];
     _mainView.contentColor = [UIColor grayColor];
     _mainView.leftOffset = 12;
-    _mainView.rightOffset = 50;
+    _mainView.rightOffset = -12;
     _mainView.textAlignment = NSTextAlignmentLeft;
     [_mainView addTextFeature:firstLabelFeature forLabel:0];
     [_mainView addTextFeature:secondLabelFeature forLabel:1];
@@ -98,7 +98,7 @@
     [super viewDidLoad];
     [self suitIOS7];
     
-    [_mainView setText:@"第一个label" forLabel:0];
+    [_mainView setText:@"第一个label第一个label第一个label第一个label第一个label" forLabel:0];
     [_mainView setText:@" 第二个label " forLabel:1];
     [_mainView setText:nil forLabel:2];
     [_mainView setText:@"第四个label" forLabel:3];

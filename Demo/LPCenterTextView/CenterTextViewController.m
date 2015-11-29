@@ -37,7 +37,6 @@
     _infoView.numberOfLine = 0;
     _infoView.contentFont = [UIFont systemFontOfSize:14];
     _infoView.contentColor = [UIColor lightGrayColor];
-    _infoView.backgroundColor = [UIColor redColor];
     [_infoView setTextColor:[UIColor blackColor] InIndex:0];
     [self.view addSubview:_infoView];
     
@@ -77,7 +76,7 @@
     
     [_infoView setText:@"小王子" forLabel:0];
     [_infoView setText:nil forLabel:1];
-    [_infoView setText:@"羽毛球 排球 游泳 健身 做饭 啦拉拉" forLabel:2];
+    [_infoView setText:@"羽毛球 排球 游泳 健身 做饭 啦拉拉 羽毛球 排球 游泳 健身 做饭 啦拉拉" forLabel:2];
     [_infoView setText:@"loopeer CEO" forLabel:3];
     [_infoView refresh];
     
