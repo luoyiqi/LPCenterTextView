@@ -13,6 +13,8 @@
 		7916B0FB1C0AE4E100505F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7916B0FA1C0AE4E100505F64 /* Assets.xcassets */; };
 		7916B1091C0AE4E100505F64 /* LPCenterTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1081C0AE4E100505F64 /* LPCenterTextViewTests.m */; };
 		7916B1141C0AE4E100505F64 /* LPCenterTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1131C0AE4E100505F64 /* LPCenterTextViewUITests.m */; };
+		7916B1241C0AEA7E00505F64 /* LPCenterTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1231C0AEA7E00505F64 /* LPCenterTextView.m */; };
+		7916B1271C0AEAF100505F64 /* LPCenterTextFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 7916B1261C0AEAF100505F64 /* LPCenterTextFeature.m */; };
 		E465A7C5A31FA14B6AF71F95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D30A882A506B28B97B3B65C1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,10 @@
 		7916B10F1C0AE4E100505F64 /* LPCenterTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPCenterTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7916B1131C0AE4E100505F64 /* LPCenterTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCenterTextViewUITests.m; sourceTree = "<group>"; };
 		7916B1151C0AE4E100505F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7916B1221C0AEA7E00505F64 /* LPCenterTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCenterTextView.h; sourceTree = "<group>"; };
+		7916B1231C0AEA7E00505F64 /* LPCenterTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCenterTextView.m; sourceTree = "<group>"; };
+		7916B1251C0AEAF100505F64 /* LPCenterTextFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCenterTextFeature.h; sourceTree = "<group>"; };
+		7916B1261C0AEAF100505F64 /* LPCenterTextFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCenterTextFeature.m; sourceTree = "<group>"; };
 		AA55336105B81F3F990FA0AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D30A882A506B28B97B3B65C1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E9DB1D813155FA47E92415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,12 +119,12 @@
 		7916B0ED1C0AE4E100505F64 /* LPCenterTextView */ = {
 			isa = PBXGroup;
 			children = (
+				7916B1211C0AEA5B00505F64 /* LPCenterTextView */,
 				7916B0F11C0AE4E100505F64 /* AppDelegate.h */,
 				7916B0F21C0AE4E100505F64 /* AppDelegate.m */,
 				7916B0F41C0AE4E100505F64 /* ViewController.h */,
 				7916B0F51C0AE4E100505F64 /* ViewController.m */,
 				7916B0FA1C0AE4E100505F64 /* Assets.xcassets */,
-				7916B0FF1C0AE4E100505F64 /* Info.plist */,
 				7916B0EE1C0AE4E100505F64 /* Supporting Files */,
 			);
 			path = LPCenterTextView;
@@ -127,6 +133,7 @@
 		7916B0EE1C0AE4E100505F64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7916B0FF1C0AE4E100505F64 /* Info.plist */,
 				7916B0EF1C0AE4E100505F64 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -148,6 +155,17 @@
 				7916B1151C0AE4E100505F64 /* Info.plist */,
 			);
 			path = LPCenterTextViewUITests;
+			sourceTree = "<group>";
+		};
+		7916B1211C0AEA5B00505F64 /* LPCenterTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7916B1221C0AEA7E00505F64 /* LPCenterTextView.h */,
+				7916B1231C0AEA7E00505F64 /* LPCenterTextView.m */,
+				7916B1251C0AEAF100505F64 /* LPCenterTextFeature.h */,
+				7916B1261C0AEAF100505F64 /* LPCenterTextFeature.m */,
+			);
+			name = LPCenterTextView;
 			sourceTree = "<group>";
 		};
 		DD662F8CD9252F3517890C56 /* Frameworks */ = {
@@ -322,7 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7916B0F61C0AE4E100505F64 /* ViewController.m in Sources */,
+				7916B1271C0AEAF100505F64 /* LPCenterTextFeature.m in Sources */,
 				7916B0F31C0AE4E100505F64 /* AppDelegate.m in Sources */,
+				7916B1241C0AEA7E00505F64 /* LPCenterTextView.m in Sources */,
 				7916B0F01C0AE4E100505F64 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
